@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+}
+body
+{
+  background-color: yellow;
+}
+form{
+  
+        width: auto;
+        margin: 100px;
+        padding: 20px;
+        background-color:yellow;
+        border: 1px solid #e017d3;
+        border-radius: 5px;
+}
+
+label {
+  align-items: center;
+  float: left;
+  display: block;
+  margin-bottom: 10px;
+}
+input[type="password"]
+{
+  float: right;
+ align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color:rgb(6, 6, 236);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.4s, background-color 0.4s;
+}
+
+button::before {
+  content: "";
+  background-color: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300%;
+  height: 300%;
+  transition: width 0.4s, height 0.4s, background-color 0.4s;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+button:hover::before {
+  width: 0;
+  height: 0;
+}
+
+button:hover {
+  color: blue;
+  background-color: #fff;
+  transition: color 0.4s, background-color 0.4s;
+}
