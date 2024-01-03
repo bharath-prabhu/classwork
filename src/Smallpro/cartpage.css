@@ -1,0 +1,36 @@
+/* src/components/TransparentForm.css */
+.form-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('d16.jpg') center/cover; /* Set your background image */
+  filter: blur(10px); /* Apply a blur effect to the background image */
+}
+
+.glass-form {
+  background-color: rgba(255, 255, 255, 0.2); /* Set a semi-transparent white background for the form (glass effect) */
+  backdrop-filter: blur(10px); /* Apply a blur effect to the form background (glass effect) */
+  padding: 20px;
+  border-radius: 8px;
+  width: 800px;
+  height: 600px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for better visibility */
+}
+.left
+{
+  float: left;
+}
+.right
+{
+  float:right
+}

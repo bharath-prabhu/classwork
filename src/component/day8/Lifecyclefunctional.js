@@ -24,8 +24,10 @@ return (
     <div>
       <p>{message}</p>
       <button onClick={handleClick}>Update Message</button>
+      
     </div>
   );
 };
 
 export default LifecycleFunctional;
+

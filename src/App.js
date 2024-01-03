@@ -1,8 +1,22 @@
 // import React from 'react';
 // import './App.css';
 
-import Lifecycle from "./component/day8/Lifecycle";
-import LifecycleFunctional from "./component/day8/Lifecyclefunctional";
+import { Provider } from "react-redux";
+import CounterComponent from "./Thunk/CounterComponent";
+import store from "./Thunk/store";
+
+//import Move from "./component/Movecombo/Move";
+
+
+
+//import FruitSlider from "./component/Movecombo/Move";
+
+// import LoginPage from "./Smallpro/Login";
+// import SignupPage from "./Smallpro/Sign";
+// import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import TransparentForm from "./Smallpro/cartpage";
+// import Lifecycle from "./component/day8/Lifecycle";
+// import LifecycleFunctional from "./component/day8/Lifecyclefunctional";
 
 // import Car from "./component/day8/Car";
 // import ErrorBoundary from "./component/day8/ErrorBoundary";
@@ -127,6 +141,12 @@ export default function App()
 {
     return(
      <div>
+        <Provider store={store}>
+            <CounterComponent/>
+        </Provider>
+      
+       {/* <Move/> */}
+        {/* <TransparentForm/> */}
          {/* <Parent/> */}
         {/* <Twoway/>
         <DefaultProps/>  */}
@@ -137,8 +157,8 @@ export default function App()
             <Car carName="r"></Car>
             </ErrorBoundary> */}
             {/* <TryCatch fruit="o"></TryCatch> */}
-       <Lifecycle/>
-       <LifecycleFunctional/>
+       {/* <Lifecycle/>
+       <LifecycleFunctional/> */}
         
     
      </div>   
