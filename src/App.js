@@ -1,9 +1,12 @@
 // import React from 'react';
 // import './App.css';
 
-import { Provider } from "react-redux";
-import CounterComponent from "./Thunk/CounterComponent";
-import store from "./Thunk/store";
+import Form from "./component/Form";
+
+// import { Provider } from "react-redux";
+//import PaymentForm from "./Smallpro/payment";
+// import CounterComponent from "./Thunk/CounterComponent";
+// import store from "./Thunk/store";
 
 //import Move from "./component/Movecombo/Move";
 
@@ -141,9 +144,10 @@ export default function App()
 {
     return(
      <div>
-        <Provider store={store}>
+        {/* <Provider store={store}>
             <CounterComponent/>
-        </Provider>
+        </Provider> */}
+        {/* <PaymentForm/> */}
       
        {/* <Move/> */}
         {/* <TransparentForm/> */}
@@ -152,7 +156,7 @@ export default function App()
         <DefaultProps/>  */}
         {/* <List1/> */}
         {/* <TextButtons/> */}
-        
+        <Form/>
             {/* <ErrorBoundary>
             <Car carName="r"></Car>
             </ErrorBoundary> */}

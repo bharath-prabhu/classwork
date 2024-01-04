@@ -1,0 +1,55 @@
+.payment-form-container {
+    display: block;
+    width: 50%;
+    margin: 30px auto;
+    border-radius: 5px;
+    /* background-color: rgba(221, 240, 216, 0.8); Adjust the alpha value for transparency */
+   
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    backdrop-filter: blur(10px); /* Adjust the blur value for the glass effect */
+}
+
+.payment-form-container h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.payment-form-container input[type="text"],
+.payment-form-container input[type="number"],
+.payment-form-container input[type="email"],
+.payment-form-container input[type="date"],
+.payment-form-container select,
+.payment-form-container textarea,
+.payment-form-container fieldset {
+   /* Adjust the alpha value for transparency */
+    
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.payment-form-container img {
+    
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.payment-form-container input[type="submit"] {
+    width: 100%;
+    /* background-color: #f0f6f0; */
+    color: white;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.payment-form-container input[type="submit"]:hover {
+    background-color: #0b6d37;
+}
